@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR QUESTION"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:max="5"
+            style="?android:progressBarStyleHorizontal"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOption_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option 1"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/question_option"
+        />
+
+    <TextView
+        android:id="@+id/tvOption_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option 2"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/question_option"
+        />
+
+    <TextView
+        android:id="@+id/tvOption_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option 3"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/question_option"
+        />
+
+    <TextView
+        android:id="@+id/tvOption_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="option 4"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/question_option"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
